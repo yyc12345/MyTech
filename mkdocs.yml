@@ -1,0 +1,38 @@
+site_name: 我的开源软件技巧笔记本
+site_description: '一个记录了开源软件使用技巧的笔记本。'
+site_author: 'yyc12345'
+site_url: 'https://yyc12345.github.io/MyTech/'
+copyright: '内容基于<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>协议授权。'
+
+nav:
+  - '首页': 'index.md'
+  - 'Blender': 'blender.md'
+  - 'Krita': 'krita.md'
+  - 'Inkscape': 'inkscape.md'
+
+theme:
+  name: readthedocs
+  locale: zh_CN
+  include_homepage_in_sidebar: false
+
+plugins: []
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
