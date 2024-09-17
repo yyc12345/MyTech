@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh_CN" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="yyc12345" /><link rel="canonical" href="https://yyc12345.github.io/MyTech/blender/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Blender - 我的开源软件技巧笔记本</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Blender";
+        var mkdocs_page_input_path = "blender.md";
+        var mkdocs_page_url = "/MyTech/blender/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> 我的开源软件技巧笔记本
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Blender</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#animation">Animation部分</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_1">动画制作流程</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#timeline">Timeline</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_2">快捷键</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_3">菜单</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#graph-editor">Graph Editor</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_4">快捷键</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_5">菜单</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_6">控制柄</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../krita/">Krita</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../inkscape/">Inkscape</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">我的开源软件技巧笔记本</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Blender</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="blender">Blender技巧笔记本</h1>
+<p>众所周知，建模软件Blender的使用是个循序渐进的过程，你会遇到很多问题，同时去查找这些问题的解决方案，每个解决方案又能更加增进你对Blender的了解。你对Blender的认知就是这样螺旋上升的。这个页面就是用来记录我在Blender中遇到问题，解决问题的过程中知晓的一些Blender技巧，以防止长时间不用而忘记。</p>
+<p>之前在我的Blog里也有一篇Blender技巧记录型文章，不过那个文章主要是服务于Ballance制图的，这里记录的不局限于Ballance制图，而是面向更广泛的Blender创作的。因为给Ballance搞东西死路一条，我已经放弃了Ballance制图了，原文章的一些技巧会在这里重新组织并记录，原文章不再更新。</p>
+<h2 id="animation">Animation部分</h2>
+<p>国内教程来自：<a href="https://www.bilibili.com/video/BV11e411E7Sw">https://www.bilibili.com/video/BV11e411E7Sw</a><br />
+全球版本，可以在国内版本报废的时候观看：<a href="https://www.youtube.com/@PierrickPicaut_P2DESIGN/videos">https://www.youtube.com/@PierrickPicaut_P2DESIGN/videos</a></p>
+<h3 id="_1">动画制作流程</h3>
+<p>先是Blocking阶段。在这个阶段不需要考虑任何的插值，插值模式更改为constant。只需要在Timeline上合适的位置打上关键帧，然后做好合适的物体变换即可。这个阶段主要关注时序和位置。
+Splining阶段。将先前的常数插值改为正确的插值，通常是贝塞尔曲线。
+然后是Polishing阶段，主要是精细调整。例如对动画播放起来一些违和感的部分做特殊化调整。动画不是一个线性的艺术，它依靠你的主观感受，你做的细微调整越多，动画就越逼真。</p>
+<h3 id="timeline">Timeline</h3>
+<h4 id="_2">快捷键</h4>
+<p>与其它Blender面板类似，在Animation中也支持许多类似功能的快捷键：</p>
+<p>帧标头指的是Timeline最上面你选择的帧，用蓝色方框框起来的那个数字。也可以在Timeline右上角闹钟图标的左边的框里读到。</p>
+<ul>
+<li><code>G</code>：和3D操作一致，是移动关键帧的意思</li>
+<li><code>S</code>：和3D操作一致，可以缩放关键帧，缩放是相对于帧标头的。</li>
+<li><code>R</code>：与3D操作不同，不是旋转，而是选择帧类型。实际上就是选择帧显示的图标。这个图标实际上没有任何程序上的意义，只是你看着爽不爽，按自己意愿随意换的，用于更方便直观地组织你的动画。</li>
+<li><code>Numpad 0</code>：把帧标头放在视图中央。</li>
+<li><code>Numpad .</code>：和3D操作一致，查看当前选定的关键帧。</li>
+<li><code>P</code>：按下<code>P</code>后，在时间线上选择你想要观看预览的区间，然后动画就只会在这个区间内循环播放。<code>Alt + P</code>取消预览，动画就会从头播放到尾部。点击Timeline右上角的闹钟图标也可以进行切换，闹钟启用后，右侧的开始结束帧号就是预览的开始和结束。</li>
+<li><code>Ctrl + Home</code>设置动画的开始，<code>Ctrl + End</code>设置动画的结束，设定的位置是当前的帧标头。也可以在Timeline右上角的闹钟旁边的数值里调整。当闹钟未启用的时候设置的是动画本身的长度，闹钟启用时设置的就是动画预览的开始和结束。</li>
+<li><code>Ctrl + Shift + LMB 单击一个帧</code>：选择帧标头之后或之前的所有关键帧（包含帧标头那帧的），选取方式取决于你是点击帧标头后方的关键帧还是前方的，点击哪一方就选择哪一侧。</li>
+<li><code>B</code>：按下后鼠标左键框选，选中框内的所有关键帧。这个框选似乎是以追加的方式进行的。</li>
+<li><code>T</code>：设置插值模式，决定了当前关键帧到下一个关键帧是如何插值的。</li>
+</ul>
+<h4 id="_3">菜单</h4>
+<ul>
+<li><code>Timeline - View - Only Show Selected</code>：只显示和当前选中物体关联的动画的关键帧。</li>
+<li><code>Timeline - Playback - Sync</code>：控制动画播放时的行为<ul>
+<li><code>Play Every Frame</code>：每一帧都播放。如果播放时左上角变红，说明Blender没法按照渲染设置中的预定义帧率进行播放，这会造成播放动画的速度慢于最终渲染出来的成品。</li>
+<li><code>Frame Dropping</code>：丢弃一些帧，以试图让播放速率匹配渲染选项中设定的帧率。会丢失细节，但是可以让你清楚地知道你动画最终渲染出来是以什么样的速度播放的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="graph-editor">Graph Editor</h3>
+<h4 id="_4">快捷键</h4>
+<ul>
+<li><code>X</code>：选择左侧通道，点击此按键，删除对应通道。</li>
+<li><code>Shift + RMB</code>：放置2D游标。2D游标会生成一条额外的水平蓝线，和帧标头的线条一样。二者交点就是游标位置。</li>
+<li><code>Shift + E</code>：先选择关键帧，再按，打开Keyframe Extrapolation（关键帧外推）菜单。</li>
+</ul>
+<h4 id="_5">菜单</h4>
+<ul>
+<li><code>Graph Editor - Snap</code>：吸附，默认是<code>Frame</code><ul>
+<li><code>Frame</code>：按帧吸附</li>
+<li><code>Second</code>：按秒吸附。只会吸附到整数秒的帧上。</li>
+</ul>
+</li>
+<li><code>Graph Editor - Pivot Point</code>：旋转缩放时候的原点选择。与3D视图功能一致。</li>
+</ul>
+<h4 id="_6">控制柄</h4>
+<p>Graph Editor中的每个关键帧都有一个点和两个控制柄组成，控制柄可以有不同的类型，每种类型的行为也不相同。按<code>V</code>，或者在<code>Graph Editor - Key - Handle</code>菜单中，可以为当前选中关键帧设置控制柄类型。</p>
+<ul>
+<li>Auto Clamped：这是Blender关键帧的默认控制柄模式。在纵向移动它时，他会同时调整控制柄。如果移出了在纵轴上由上一个控制点和下一个控制点的设定的值域时，控制柄立刻变得水平。这也就意味着它总是创建一条平滑的曲线，从上一帧到下一帧，不会发生过冲。</li>
+<li>Automatic：与Auto Clamped类似，但他不会在移动时调整控制柄，这也就意味着它可以发生过冲行为。</li>
+<li>Aligned：当你在Auto Clamped中试图旋转或缩放控制柄时，会自动转为这个模式。Blender不再自动为你处理控制柄，由你自己设置控制柄。Blender只保证两侧的控制柄在同一直线上。</li>
+<li>Free：Aligned的更进一步版本，Blender也不再保证两侧控制柄在同一直线上。使用这个类型后，曲线的一阶导数可以不连续了。也就是在一个关键帧上可以实现类似y=abs(x)的那种突变。</li>
+<li>Vector：与Free类似，但是Blender会自动将控制柄指向上一个或下一个关键帧的位置。一旦你手动调整了控制柄，会立刻变成Free模式。</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="首页"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../krita/" class="btn btn-neutral float-right" title="Krita">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>内容基于<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>协议授权。</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../krita/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

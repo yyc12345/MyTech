@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh_CN" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="yyc12345" /><link rel="canonical" href="https://yyc12345.github.io/MyTech/krita/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Krita - 我的开源软件技巧笔记本</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Krita";
+        var mkdocs_page_input_path = "krita.md";
+        var mkdocs_page_url = "/MyTech/krita/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> 我的开源软件技巧笔记本
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../blender/">Blender</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Krita</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">数位笔设置</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">基本操作</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">奇异操作</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">线稿批量改颜色</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">选区</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">图层</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_7">杂项</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../inkscape/">Inkscape</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">我的开源软件技巧笔记本</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Krita</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="krita">Krita技巧笔记本</h1>
+<p>最近在学习画画。考虑到画画的时候基本上是左手键盘，右手数位板，且右手数位板不好做精细的点击按钮的操作，所以创建这个文档，记录一些用数位板在Krita里画画的快捷键操作等。</p>
+<p>由于目前市面上的大多数日式绘画教程都是针对SAI，SAI2和PS这种商业软件的，鲜有针对Krita的。Krita的相关视频更多呈现出一种兴趣使然，社区驱动的样子，专业性严重不足。因此我是通过观看一部针对SAI2的教程来学习的，在学习的同时，找到对应功能在Krita中的映射，就像我当初从3ds Max转Blender进行制图时所做的一样。</p>
+<h2 id="_1">数位笔设置</h2>
+<p>数位笔有两个按键，一般一个设置成鼠标右键，一个设置成鼠标中键，因为这两个操作用的较多。此处按下方按键为鼠标中键，上方按键为鼠标右键设置。</p>
+<h2 id="_2">基本操作</h2>
+<ul>
+<li>移动画布<ul>
+<li>鼠标中键拖动</li>
+<li>按住<code>Space</code>，鼠标左键拖动（或数位笔在板子上移动）</li>
+</ul>
+</li>
+<li>旋转画布：<ul>
+<li>按住<code>Shift</code>，鼠标中键拖动</li>
+<li><code>Numpad 5</code>：重置旋转</li>
+</ul>
+</li>
+<li>缩放画布：<ul>
+<li>按住<code>Ctrl</code>，鼠标中键拖动</li>
+<li><code>Numpad 1</code>：100%缩放（原始大小）</li>
+<li><code>Numpad 2</code>：画布缩放到适合窗口大小</li>
+</ul>
+</li>
+<li>取色：按住<code>Ctrl</code>，鼠标左键点击（或数位笔在板子上点击）</li>
+<li>调整笔刷大小：按住<code>Shift</code>，用数位笔在板子上左右走来放大缩小（也就是鼠标左键拖动）</li>
+</ul>
+<h2 id="_3">奇异操作</h2>
+<h3 id="_4">线稿批量改颜色</h3>
+<p>有时候线稿用了错误的颜色绘画，比如棕色，现在为了方便查看，想给它全部转为黑色。SAI2中的做法是开图层透明度锁定，然后黑色笔刷最大刷一下就行了。在Krita里也是一样的原理：</p>
+<ul>
+<li>在图层面板里，对应图层的三个图标中最右边的那个棋盘格图标是透明度锁定，点击后显示锁图标后代表开启了透明度锁定。或者右键图层属性里也可以选择，只是很麻烦。</li>
+<li>然后黑色最大笔刷刷一下就变了。</li>
+</ul>
+<p>然而Krita里也有更简单的方法：</p>
+<ul>
+<li>在工具栏也有一个棋盘格图标，点一下出现锁图标，锁定透明度，只不过是针对画笔工具的。</li>
+<li>也是黑色最大笔刷刷一下就可以了。</li>
+</ul>
+<p>这样就不需要去调整图层锁定透明度属性了。</p>
+<h2 id="_5">选区</h2>
+<ul>
+<li>矩形选区：<code>Ctrl + R</code></li>
+<li>取消选区：<code>Ctrl + Shift + A</code></li>
+</ul>
+<h2 id="_6">图层</h2>
+<ul>
+<li>清除当前图层：<code>Delete</code></li>
+<li>合并图层：<code>Ctrl + E</code></li>
+</ul>
+<h2 id="_7">杂项</h2>
+<p>暂无</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../blender/" class="btn btn-neutral float-left" title="Blender"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../inkscape/" class="btn btn-neutral float-right" title="Inkscape">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>内容基于<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>协议授权。</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../blender/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../inkscape/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

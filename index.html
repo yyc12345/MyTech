@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh_CN" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="一个记录了开源软件使用技巧的笔记本。" /><meta name="author" content="yyc12345" /><link rel="canonical" href="https://yyc12345.github.io/MyTech/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>我的开源软件技巧笔记本</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u9996\u9875";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/MyTech/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> 我的开源软件技巧笔记本
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="blender/">Blender</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="krita/">Krita</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="inkscape/">Inkscape</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">我的开源软件技巧笔记本</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">首页</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>FSF曾说：</p>
+<blockquote>
+<p>选择自由而不是选择企业独裁主义是重新获得数字自主权控制自己的计算机的最重要一步。</p>
+</blockquote>
+<p>这个世界上有着许多的人正在使用某些企业开发的闭源专有软件，它们有的是因为工作需求，有些则是看大家都在用而盲从。对于前者，我没有任何意见，我相当支持，因为你没有办法左右公司的决策。但对于后者，我更想通过我的某些行动来让他们知道自由软件替代的好处。它们中的大多数选择闭源专有软件并非觉得它们更好，而是因为它们只知道闭源专有软件。它们谈及建模只知道Autodesk家的3ds Max和MAYA，而不知道Blender；它们剪辑的时候想到的第一个就是Adobe Premiere，而不是Kdenlive，哪怕它们一辈子也用不到那些只在Adobe Premiere中存在的功能；它们只知道学校指定的MATLAB不会出错，却从未想过GNU Octave，哪怕它们的脚本中用到的完全都是基本函数；它们画画的时候要么使用SAI，要么使用Adobe Photoshop，却不知道Krita。</p>
+<p>许多人盲目地跟着其它人选择，跟着视频教程的选择，放弃了自己思考的能力。因而选择了那些闭源专有软件，而非自由开源软件。所以，既然我现在有时间，我就应当身先士卒，体验这些自由软件，看它们是否真的能替代闭源专有软件，并找到正确使用它们的方式。同时留下这些文档，给那些想入门，想迁移的人一个比较便捷的参考，毕竟我也是从0开始学这些软件的，我也是看着那些闭源私有软件的教程入门的。</p>
+<p>开源软件，自由软件的意义从来不止于你能自由免费地获得软件本体，更在于你能够自由地去修改它，让它变得更适合你，为你所用，这才是开源软件，自由软件的最大的意义。</p>
+<p>以下是我使用的自由软件，它们是一些闭源专有软件很好的替代（至少对于大多数人的使用而言。一些专业的功能仍然需要专业的软件，我也不建议那些人使用这些，除非你和我一样，有为开源软件改进的决心和能力）：</p>
+<ul>
+<li><a href="blender/">Blender</a>：世界上最好的开源3D建模软件，我用它代替3ds Max。</li>
+<li><a href="krita/">Krita</a>：世界上最好的开源板绘软件。我用它代替SAI和Adobe Photoshop。</li>
+<li><a href="inkscape/">Inkscape</a></li>
+<li>GNU Octave：我用它代替MATLAB进行本科阶段的科学计算。</li>
+<li>GIMP：我用它和Krita一起代替Adobe Photoshop（但实际上GIMP的操作逻辑一坨大便，我能用Krita的时候就不会用GIMP）。</li>
+<li>Kdenlive：我用它代替Adobe Premiere</li>
+<li>Audacity：我用它代替Adobe Audition</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="blender/" class="btn btn-neutral float-right" title="Blender">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>内容基于<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>协议授权。</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="blender/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2024-09-17 11:41:29.477007+00:00
+-->
