@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh_CN" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="yyc12345" /><link rel="canonical" href="https://yyc12345.github.io/MyTech/blender/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Blender - 我的开源软件技巧笔记本</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Blender";
+        var mkdocs_page_input_path = "blender.md";
+        var mkdocs_page_url = "/MyTech/blender/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> 我的开源软件技巧笔记本
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Blender</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">物体模式</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_2">快捷键</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">编辑模式</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">快捷键</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">曲线编辑模式专用</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sculpting">Sculpting模式</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">快捷键</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#texture-paint">Texture Paint模式</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">工具选项</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_8">快捷键</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#n">N菜单部分</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_9">数据面板部分</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_10">摄像机数据</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_11">布料模拟部分</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_12">垫子与沙发</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_13">沙发物体准备</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_14">锚固</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_15">沙发纹路准备</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_16">物理模拟设置</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_17">窗帘</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#animation">Animation部分</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_18">动画制作流程</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#timeline">Timeline</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_19">快捷键</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_20">菜单</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#graph-editor">Graph Editor</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_21">快捷键</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_22">菜单</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_23">控制柄</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../krita/">Krita</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../inkscape/">Inkscape</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">我的开源软件技巧笔记本</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Blender</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="blender">Blender技巧笔记本</h1>
+<p>众所周知，建模软件Blender的使用是个循序渐进的过程，你会遇到很多问题，同时去查找这些问题的解决方案，每个解决方案又能更加增进你对Blender的了解。你对Blender的认知就是这样螺旋上升的。这个页面就是用来记录我在Blender中遇到问题，解决问题的过程中知晓的一些Blender技巧，以防止长时间不用而忘记。</p>
+<p>之前在我的Blog里也有一篇Blender技巧记录型文章，不过那个文章主要是服务于Ballance制图的，这里记录的不局限于Ballance制图，而是面向更广泛的Blender创作的。因为给Ballance搞东西死路一条，我已经放弃了Ballance制图了，原文章的一些技巧会在这里重新组织并记录，原文章不再更新。</p>
+<h2 id="_1">物体模式</h2>
+<h3 id="_2">快捷键</h3>
+<ul>
+<li>快速视图<ul>
+<li><code>Numpad 0</code>：摄像机视角</li>
+<li><code>Numpad 7</code>：顶视图</li>
+</ul>
+</li>
+<li><code>F2</code>：选中物体重命名（和Virtools快捷键一致）</li>
+<li><code>Ctrl + A</code>：打开应用（应用变换）菜单（Apply的首字母）</li>
+<li><code>Ctrl + L</code>：打开数据关联和复制菜单（Link的首字母）</li>
+<li><code>Ctrl + P</code>：设置父级目标/绑定。将选中的物体绑定到活动物体下方。活动物体为父。</li>
+<li><code>Ctrl + 大键盘数字</code>：快速给当前选定物体添加等级为<code>大键盘数字</code>的Surface Subdivision（表面细分）修改器。例如<code>Ctrl + 2</code>就是快速添加等级为2的表面细分修改器。</li>
+<li><code>/</code>：进入或退出孤立模式。孤立模式下暂时不看其它物体，只显示当前选中物体（所以它不会更改其它物体的可见性，只是暂时不看）。</li>
+</ul>
+<h2 id="_3">编辑模式</h2>
+<h3 id="_4">快捷键</h3>
+<ul>
+<li>扩选与缩选<ul>
+<li><code>Ctrl + Numpad+</code>：扩选一圈。这个对于选择挤出部分的侧边非常有用，挤出后立即扩选一次，即可选择到所有挤出的侧边。</li>
+<li><code>Ctrl + Numpad-</code>：缩选一圈，上面的相反操作。</li>
+</ul>
+</li>
+<li>Select Linked：选择互相连接的部分<ul>
+<li><code>L</code>：以鼠标所至位置为初始点，选择所有与其相接的部分。可以连续按多次<code>L</code>来选择各个独立部分。</li>
+<li><code>Shift + L</code>：<code>L</code>的相反操作，将鼠标所指位置的相接顶点从选择中删除。</li>
+<li><code>Ctrl + L</code>：类似于<code>L</code>，但是不再以鼠标位置为起始点了，改为以用户当前选择的所有结构为起始点，选择所有相接的部分。</li>
+</ul>
+</li>
+<li><code>v</code>：断离顶点，将选中的顶点断开，分裂成两个顶点。</li>
+<li><code>M</code>：合并顶点菜单（合并到中心等）。</li>
+<li><code>gg</code>：连按两下<code>g</code>，顶点滑移。顾名思义，选中一个顶点后按这个键可以在与其相连的任意一条边上滑移这个顶点。但似乎不能在边的延长线上滑移。</li>
+<li><code>Alt + S</code>：膨胀和压缩/法向缩放，顾名思义，选中一条边，可以按照其向外还是向内的方向缩放，解决了缩放不能按局部法线进行的毛病。</li>
+<li>先<code>E</code>后<code>S</code>：类似于内插面，但是是可以从没有面的部分开始。</li>
+<li><code>Shift + E</code>：设置折痕，按下后拉的越远折痕越明显。这个看起来很像锐边，但实际上只有配合表面细分修改器的时候才能看出效果，因为表面细分修改器似乎对锐边处理的不太好，标记了锐边也不会锐利，此时就要使用折痕来锐利它。如果要清除折痕，可以选中有折痕数值的边，然后<code>N菜单 - Item - Transform - Edges Data - Mean Crease</code>，把它拉到0就好了。</li>
+</ul>
+<h3 id="_5">曲线编辑模式专用</h3>
+<p>曲线编辑每个控制点也可以按<code>V</code>调整控制柄模式，和动画里的<code>Graph Editor</code>面板里的控制柄一致。需要注意的是Vector模式比较特殊，在使用曲线倒角时，只有Vector控制点连到其他点的中间的Segment是只会倒角一段的。其他类型由于中间是曲线，会分好多段。</p>
+<p>曲线编辑模式中，使用<code>Alt + S</code>按键可以单独调整某个控制点附近的曲线倒角厚度，也就是可以单独设置每个控制点的粗细的意思。这实际上是操作了N面板中<code>Item - Transform - Radius</code>的数值。</p>
+<h2 id="sculpting">Sculpting模式</h2>
+<h3 id="_6">快捷键</h3>
+<ul>
+<li><code>F</code>：调整雕刻笔刷大小。点击后左右移动鼠标调整笔刷大小，<code>LMB</code>确定。</li>
+</ul>
+<h2 id="texture-paint">Texture Paint模式</h2>
+<h3 id="_7">工具选项</h3>
+<p>Texture Paint模式的画笔，油漆桶工具，在其属性面板中有<code>Options - Bleed</code>选项。因为UV映射有一定的模糊性，所以在画贴图的时候，不能让颜色紧贴着UV边缘就结束，必须涂出去一点，才能保证不会渲染出错。这个选项就是控制涂出去的部分有多大的。这和画画中用油漆桶上色药多涂出去一点是一个道理（不然线稿和涂上去的颜色中间会有一层没有颜色的环）。</p>
+<h3 id="_8">快捷键</h3>
+<ul>
+<li><code>M</code>：切换面遮罩模式。面遮罩模式下，只有被选择的面可以被画笔画上。</li>
+<li><code>F</code>：调整画笔大小。同雕刻笔刷。</li>
+</ul>
+<h2 id="n">N菜单部分</h2>
+<ul>
+<li><code>View - View - View Lock - Lock - Camera to View</code>：将摄像机视角锁定到你的视图上，移动视图也会同时移动摄像机。虽然感觉也可以进入摄像机视角后用自由移动来实现。</li>
+</ul>
+<h2 id="_9">数据面板部分</h2>
+<h3 id="_10">摄像机数据</h3>
+<ul>
+<li><code>Viewport Diaplay - Passepartout</code>：摄像机非渲染部分的透明度，调成1可以让非渲染部分全变成黑色，方便观察结果。</li>
+</ul>
+<h2 id="_11">布料模拟部分</h2>
+<p>布料模拟适合做垫子，沙发和窗帘等物品，先创建物体，添加布料模拟，设定好参数后，就可以播放动画来模拟，模拟到想要的地方时暂停，然后直接Ctrl + A应用布料模拟修改器即可固定下当前形状。</p>
+<h3 id="_12">垫子与沙发</h3>
+<h4 id="_13">沙发物体准备</h4>
+<p>新建一个立方体，进入编辑模式（我怀疑在物体模式下缩放会有Bug，最好进编辑模式），Z轴压扁，XY平面拉伸。然后纵向横向环切几次（我切了4次，不环切的话后面表面细分后的物体形状就变成圆形了）。然后加一个Subdivide Surface修改器，迭代2-3次即可，然后应用。</p>
+<h4 id="_14">锚固</h4>
+<p>如果沙发上有需要锚固的部分，比如沙发上那些嵌进去的纹路，需要使用顶点组功能。先选中需要锚固的顶点（一般是选线条），然后转到顶点组，新建一个顶点组，然后指定这些需要锚固的顶点，之后设置布料模拟的时候会用到这个顶点组。</p>
+<h4 id="_15">沙发纹路准备</h4>
+<p>新建一个平面，纵向横向各自环切相同的次数，然后使用修改器Decimate，选择Un-Subdivide模式，迭代选择一次，即可把细分好的矩形空间转成菱形形状。然后应用修改器，面模式下按A选择所有面，X选择仅删除面，保留下所有边框。</p>
+<p>为了将纹路蚀刻到沙发上，需要使用投影切割功能。将沙发置于下方，纹路置于上方，视图转为Z轴正向，从顶往下看。然后进入沙发的编辑模式，然后再在大纲视图里Ctrl点选纹路物体。然后选择Mesh - Knife Project，即可将纹路蚀刻到沙发上。蚀刻后的图形选择的是面，可以使用Select - Select Loops - Select Boundary Loop来选择围绕这些面的边，也就选择到了蚀刻上去的纹路了，然后就可以给蚀刻上去的纹路指定顶点组了。</p>
+<h4 id="_16">物理模拟设置</h4>
+<ul>
+<li>Stiffness硬度<ul>
+<li>Tension：15</li>
+<li>Compression：15</li>
+<li>Shear：1</li>
+</ul>
+</li>
+<li>勾选Pressure<ul>
+<li>Pressure：10适合沙发，小垫子大概0.5合适？</li>
+</ul>
+</li>
+<li>Shape<ul>
+<li>Pin Group设置刚才准备好的锚固顶点组</li>
+</ul>
+</li>
+<li>Field Weight<ul>
+<li>Gravity设置为0。也就是把重力关掉，不然跟下垂了一样。</li>
+</ul>
+</li>
+</ul>
+<h3 id="_17">窗帘</h3>
+<p>TODO</p>
+<h2 id="animation">Animation部分</h2>
+<p>国内教程来自：<a href="https://www.bilibili.com/video/BV11e411E7Sw">https://www.bilibili.com/video/BV11e411E7Sw</a><br />
+全球版本，可以在国内版本报废的时候观看：<a href="https://www.youtube.com/@PierrickPicaut_P2DESIGN/videos">https://www.youtube.com/@PierrickPicaut_P2DESIGN/videos</a></p>
+<h3 id="_18">动画制作流程</h3>
+<p>先是Blocking阶段。在这个阶段不需要考虑任何的插值，插值模式更改为constant。只需要在Timeline上合适的位置打上关键帧，然后做好合适的物体变换即可。这个阶段主要关注时序和位置。
+Splining阶段。将先前的常数插值改为正确的插值，通常是贝塞尔曲线。
+然后是Polishing阶段，主要是精细调整。例如对动画播放起来一些违和感的部分做特殊化调整。动画不是一个线性的艺术，它依靠你的主观感受，你做的细微调整越多，动画就越逼真。</p>
+<h3 id="timeline">Timeline</h3>
+<h4 id="_19">快捷键</h4>
+<p>与其它Blender面板类似，在Animation中也支持许多类似功能的快捷键：</p>
+<p>帧标头指的是Timeline最上面你选择的帧，用蓝色方框框起来的那个数字。也可以在Timeline右上角闹钟图标的左边的框里读到。</p>
+<ul>
+<li><code>G</code>：和3D操作一致，是移动关键帧的意思</li>
+<li><code>S</code>：和3D操作一致，可以缩放关键帧，缩放是相对于帧标头的。</li>
+<li><code>R</code>：与3D操作不同，不是旋转，而是选择帧类型。实际上就是选择帧显示的图标。这个图标实际上没有任何程序上的意义，只是你看着爽不爽，按自己意愿随意换的，用于更方便直观地组织你的动画。</li>
+<li><code>Numpad 0</code>：把帧标头放在视图中央。</li>
+<li><code>Numpad .</code>：和3D操作一致，查看当前选定的关键帧。</li>
+<li><code>P</code>：按下<code>P</code>后，在时间线上选择你想要观看预览的区间，然后动画就只会在这个区间内循环播放。<code>Alt + P</code>取消预览，动画就会从头播放到尾部。点击Timeline右上角的闹钟图标也可以进行切换，闹钟启用后，右侧的开始结束帧号就是预览的开始和结束。</li>
+<li><code>Ctrl + Home</code>设置动画的开始，<code>Ctrl + End</code>设置动画的结束，设定的位置是当前的帧标头。也可以在Timeline右上角的闹钟旁边的数值里调整。当闹钟未启用的时候设置的是动画本身的长度，闹钟启用时设置的就是动画预览的开始和结束。</li>
+<li><code>Ctrl + Shift + LMB 单击一个帧</code>：选择帧标头之后或之前的所有关键帧（包含帧标头那帧的），选取方式取决于你是点击帧标头后方的关键帧还是前方的，点击哪一方就选择哪一侧。</li>
+<li><code>B</code>：按下后鼠标左键框选，选中框内的所有关键帧。这个框选似乎是以追加的方式进行的。</li>
+<li><code>T</code>：设置插值模式，决定了当前关键帧到下一个关键帧是如何插值的。</li>
+</ul>
+<h4 id="_20">菜单</h4>
+<ul>
+<li><code>Timeline - View - Only Show Selected</code>：只显示和当前选中物体关联的动画的关键帧。</li>
+<li><code>Timeline - Playback - Sync</code>：控制动画播放时的行为<ul>
+<li><code>Play Every Frame</code>：每一帧都播放。如果播放时左上角变红，说明Blender没法按照渲染设置中的预定义帧率进行播放，这会造成播放动画的速度慢于最终渲染出来的成品。</li>
+<li><code>Frame Dropping</code>：丢弃一些帧，以试图让播放速率匹配渲染选项中设定的帧率。会丢失细节，但是可以让你清楚地知道你动画最终渲染出来是以什么样的速度播放的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="graph-editor">Graph Editor</h3>
+<h4 id="_21">快捷键</h4>
+<ul>
+<li><code>X</code>：选择左侧通道，点击此按键，删除对应通道。</li>
+<li><code>Shift + RMB</code>：放置2D游标。2D游标会生成一条额外的水平蓝线，和帧标头的线条一样。二者交点就是游标位置。</li>
+<li><code>Shift + E</code>：先选择关键帧，再按，打开Keyframe Extrapolation（关键帧外推）菜单。</li>
+</ul>
+<h4 id="_22">菜单</h4>
+<ul>
+<li><code>Graph Editor - Snap</code>：吸附，默认是<code>Frame</code><ul>
+<li><code>Frame</code>：按帧吸附</li>
+<li><code>Second</code>：按秒吸附。只会吸附到整数秒的帧上。</li>
+</ul>
+</li>
+<li><code>Graph Editor - Pivot Point</code>：旋转缩放时候的原点选择。与3D视图功能一致。</li>
+</ul>
+<h4 id="_23">控制柄</h4>
+<p>Graph Editor中的每个关键帧都有一个点和两个控制柄组成，控制柄可以有不同的类型，每种类型的行为也不相同。按<code>V</code>，或者在<code>Graph Editor - Key - Handle</code>菜单中，可以为当前选中关键帧设置控制柄类型。</p>
+<ul>
+<li>Auto Clamped：这是Blender关键帧的默认控制柄模式。在纵向移动它时，他会同时调整控制柄。如果移出了在纵轴上由上一个控制点和下一个控制点的设定的值域时，控制柄立刻变得水平。这也就意味着它总是创建一条平滑的曲线，从上一帧到下一帧，不会发生过冲。</li>
+<li>Automatic：与Auto Clamped类似，但他不会在移动时调整控制柄，这也就意味着它可以发生过冲行为。</li>
+<li>Aligned：当你在Auto Clamped中试图旋转或缩放控制柄时，会自动转为这个模式。Blender不再自动为你处理控制柄，由你自己设置控制柄。Blender只保证两侧的控制柄在同一直线上。</li>
+<li>Free：Aligned的更进一步版本，Blender也不再保证两侧控制柄在同一直线上。使用这个类型后，曲线的一阶导数可以不连续了。也就是在一个关键帧上可以实现类似y=abs(x)的那种突变。</li>
+<li>Vector：与Free类似，但是Blender会自动将控制柄指向上一个或下一个关键帧的位置。一旦你手动调整了控制柄，会立刻变成Free模式。</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="首页"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../krita/" class="btn btn-neutral float-right" title="Krita">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>内容基于<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>协议授权。</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../krita/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
